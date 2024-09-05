@@ -36,6 +36,10 @@ nav a:hover {
   color: #ddd;
 }
 
+nav .active {
+  color: #ddd;
+}
+
 .menu-toggle {
   display: none;
   cursor: pointer;
@@ -46,7 +50,7 @@ nav a:hover {
   .header {
     padding: 30px;
   }
-  nav {
+  .header nav {
     display: none;
     flex-direction: column;
     background-color: #032043;
@@ -62,12 +66,11 @@ nav a:hover {
     display: block;
   }
 
-  .header.active nav {
+  .header nav.active {
     display: flex;
     animation: slideDown 0.3s ease;
   }
 
-  /* Slide down animation */
   @keyframes slideDown {
     from {
       opacity: 0;
@@ -135,13 +138,13 @@ nav a:hover {
 .social-links {
   margin: 10px;
 }
-.social-links a{
-    text-decoration: none;
-    color: #91bcf1;
+.social-links a {
+  text-decoration: none;
+  color: #91bcf1;
 }
-.social-links a:hover{
-    text-decoration: none;
-    color: #02479c;
+.social-links a:hover {
+  text-decoration: none;
+  color: #02479c;
 }
 .social-links i {
   padding-left: 10px;
@@ -203,6 +206,10 @@ nav a:hover {
 .project {
   padding: 50px;
   background-color: #000b18;
+}
+.project-full {
+    padding: 10px 20px 150px 20px;
+    background-image: linear-gradient(to bottom, #032043, #000b18);
 }
 /* Tittle setiap section */
 .tittle {
@@ -529,7 +536,7 @@ nav a:hover {
 
 .footer-bottom {
   text-align: center;
-  padding-top: 10px; 
+  padding-top: 10px;
   margin-top: 10px;
   border-top: 1px solid #91bcf1;
 }
@@ -550,3 +557,29 @@ nav a:hover {
     gap: 10px;
   }
 }
+
+.slide-in {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.slide-in-text {
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  @keyframes slideInText {
+    from {
+      transform: translateY(-20%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }

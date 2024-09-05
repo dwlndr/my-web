@@ -1,6 +1,3 @@
-const menuToggle = document.querySelector(".menu-toggle");
-const header = document.querySelector(".header");
-
-menuToggle.addEventListener("click", () => {
-  header.classList.toggle("active");
+document.querySelector(".menu-toggle").addEventListener("click", function () {
+  document.querySelector("nav").classList.toggle("active");
 });

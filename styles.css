@@ -196,19 +196,24 @@ nav a:hover {
   padding: 50px;
   background-color: #000b18;
 }
-
-.project .tittle {
+/* Tittle setiap section */
+.tittle {
   text-align: center;
   margin-bottom: 10vh;
 }
 
-.project .tittle h1 {
+.tittle h1 {
   font-size: 2.5rem;
   color: #0b6be0;
   font-weight: bolder;
 }
+.tittle p {
+  color: #91bcf1;
+  font-size: 1.2rem;
+  margin-top: -30px;
+}
+/* ------------------------- */
 
-/* Styling for the list of projects */
 .box-project {
   display: flex;
   flex-direction: column;
@@ -348,3 +353,133 @@ nav a:hover {
 }
 
 /* -------------------------------------------------------------------------------------------------------- */
+/* Blog Section */
+.blog {
+  background-image: linear-gradient(to top, #032043, #000b18);
+  padding: 50px;
+  color: #91bcf1;
+}
+/* Blog Section */
+.blog {
+  background-image: linear-gradient(to top, #032043, #000b18);
+  padding: 50px;
+  color: #91bcf1;
+}
+
+.box-blog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card-blog {
+  width: 300px;
+  background-color: #000b1835;
+  border: 1px solid #0b6be0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-blog:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 20px rgba(0, 107, 224, 0.3);
+}
+
+/* Styling for the blog image */
+.card-blog img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.blog-info {
+  text-align: center;
+}
+
+.blog-info h2 {
+  font-size: 1.5rem;
+  color: #0b6be0;
+  margin-bottom: 10px;
+}
+
+.blog-info p {
+  font-size: 1rem;
+  color: #91bcf1;
+  margin-bottom: 30px;
+}
+
+.blog-info a {
+  font-size: 1rem;
+  color: #fff;
+  background-color: #0b6be0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.blog-info a:hover {
+  background-color: #032043;
+}
+
+@media (max-width: 768px) {
+  .box-blog {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card-blog {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .card-blog img {
+    height: 120px;
+  }
+
+  .blog-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .blog-info p {
+    font-size: 0.95rem;
+  }
+
+  .blog-info a {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-blog {
+    padding: 10px;
+  }
+
+  .card-blog img {
+    height: 100px;
+  }
+
+  .blog-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .blog-info p {
+    font-size: 0.85rem;
+  }
+
+  .blog-info a {
+    font-size: 0.85rem;
+    padding: 7px 14px;
+  }
+}
+/* ----------------------------------------------------------------------------------------------------- */
